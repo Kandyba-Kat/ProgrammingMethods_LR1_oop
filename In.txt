@@ -4,9 +4,6 @@ cba
 2
 vvv
 nnn
-1
+3
 adr
 rda
-2
-123
-321
