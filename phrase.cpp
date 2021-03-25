@@ -13,6 +13,7 @@ namespace type_phrases {
 		phrase* new_phrase;
 		string k;
 		getline(ifst, k);
+		if (k == "") return 0;
 		switch (atoi(k.c_str()))
 		{
 		case 1:
