@@ -11,7 +11,7 @@ namespace type_phrases {
 	}
 
 	void riddle::Output(ofstream& ofst) {
-		ofst << "Answer to riddle: " << answer << ";" << endl;
+		ofst << "Answer: " << answer << ";" << endl;
 	}
 
 	riddle::~riddle() {}

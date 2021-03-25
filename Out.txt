@@ -1,7 +1,9 @@
-Container contains 3 element
+Container contains 4 element
 Author of aphorism: abc;
 Content: cba.
 Proverb of country: vvv;
 Content: nnn.
-Answer: adr;
+Author of aphorism: adr;
 Content: rda.
+Proverb of country: 123;
+Content: 321.
