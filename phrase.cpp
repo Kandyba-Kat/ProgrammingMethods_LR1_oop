@@ -3,6 +3,7 @@
 #include "phrase.h"
 #include "aphorism.h"
 #include "proverb.h"
+#include "riddle.h"
 
 using namespace std;
 
@@ -19,6 +20,9 @@ namespace type_phrases {
 			break;
 		case 2:
 			new_phrase = new proverb;
+			break;
+		case 3:
+			new_phrase = new riddle;
 			break;
 		default:
 			cout << "There are no such type of phrases!" << endl;

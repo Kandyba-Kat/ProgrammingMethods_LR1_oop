@@ -1,0 +1,5 @@
+Container contains 2 element
+Author of aphorism: abc;
+Content: cba.
+Proverb of country: vvv;
+Content: nnn.

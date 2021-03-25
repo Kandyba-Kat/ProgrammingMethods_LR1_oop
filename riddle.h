@@ -1,18 +1,17 @@
-#ifndef APHORISM_H
-#define APHORISM_H
+#ifndef RIDDLE_H
+#define RIDDLE_H
 #include <fstream>
 #include <string>
 #include "phrase.h"
 using namespace std;
 
 namespace type_phrases {
-	class aphorism : public phrase {
-		string author;
+	class riddle : public phrase {
+		string answer;
 	public:
 		void Input(ifstream& ifst);
 		void Output(ofstream& ofst);
-		~aphorism();
+		~riddle();
 	};
 } // end type_phrases namespace
-
-#endif // !APHORISM_H
+#endif // !RIDDLE_H
