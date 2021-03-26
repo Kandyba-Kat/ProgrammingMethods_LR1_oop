@@ -12,6 +12,7 @@ namespace type_phrases {
 		phrase* new_phrase;
 		string k;
 		getline(ifst, k);
+		if (k == "") return 0;
 		switch (atoi(k.c_str()))
 		{
 		case 1:
@@ -26,10 +27,13 @@ namespace type_phrases {
 		}
 		new_phrase->Input(ifst);
 		getline(ifst, new_phrase->content);
+		string ev;
+		getline(ifst, ev);
+		new_phrase->eval = stoi(ev);
 		return new_phrase;
 	}
 
 	void phrase::phrase_Output(ofstream& ofst) {
-		ofst << "Content: " << content << "." << endl;
+		ofst << "Content: " << content << ";\n" << "Evaluation: " << eval << "." << endl;
 	}
 }

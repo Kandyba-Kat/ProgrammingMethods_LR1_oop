@@ -8,6 +8,7 @@ namespace type_phrases {
 	// общий класс фраз
 	class phrase {
 		string content;
+		int eval;
 	public:
 		virtual ~phrase() {};
 		static phrase* phrase_Input(ifstream& ifst);
