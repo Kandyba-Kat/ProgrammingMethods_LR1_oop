@@ -46,4 +46,9 @@ namespace type_phrases {
 		}
 		return cnt;
 	}
+
+	bool phrase::compare(phrase* next)
+	{
+		return num_punct_marks() > next->num_punct_marks(); // в порядке неубывания
+	}
 }

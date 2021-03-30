@@ -1,6 +1,6 @@
-﻿  phrase.cpp
+﻿  main.cpp
+  phrase.cpp
 C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\phrase.cpp(40,21): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\phrase.cpp(41,22): warning C4018: <: несоответствие типов со знаком и без знака
-  proverb.cpp
   Создание кода...
   LR1_oop.vcxproj -> C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\Debug\LR1_oop.exe
