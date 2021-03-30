@@ -1,5 +1,17 @@
-﻿  phrase.cpp
-C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\phrase.cpp(40,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\phrase.cpp(41,22): warning C4018: <: несоответствие типов со знаком и без знака
-  LINK : не найден или не выполнена сборка C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\Debug\LR1_oop.exe при последней инкрементной компоновке; выполняется полная компоновка
+﻿  aphorism.cpp
+  container.cpp
+  main.cpp
+  node.cpp
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\node.cpp(9,35): warning C4099: type_phrases::phrase: имя типа, ранее отображенное с помощью "class", теперь отображено с помощью "struct"
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\phrase.h(9): message : см. объявление "type_phrases::phrase"
+  num_punct_marks.cpp
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\num_punct_marks.cpp(6,35): warning C4099: type_phrases::phrase: имя типа, ранее отображенное с помощью "class", теперь отображено с помощью "struct"
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\phrase.h(9): message : см. объявление "type_phrases::phrase"
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\num_punct_marks.cpp(9,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\num_punct_marks.cpp(10,22): warning C4018: <: несоответствие типов со знаком и без знака
+  phrase.cpp
+  proverb.cpp
+  Создание кода...
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\node.cpp(50): warning C4715: type_phrases::node::node_Prev: значение возвращается не при всех путях выполнения
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\node.cpp(36): warning C4715: type_phrases::node::node_Next: значение возвращается не при всех путях выполнения
   LR1_oop.vcxproj -> C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\Debug\LR1_oop.exe

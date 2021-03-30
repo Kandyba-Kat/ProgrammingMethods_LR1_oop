@@ -143,6 +143,7 @@
     <ClCompile Include="container.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="node.cpp" />
+    <ClCompile Include="num_punct_marks.cpp" />
     <ClCompile Include="phrase.cpp" />
     <ClCompile Include="proverb.cpp" />
   </ItemGroup>

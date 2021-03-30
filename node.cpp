@@ -5,6 +5,8 @@
 using namespace std;
 
 namespace type_phrases {
+	// сигнатуры требуемых функций
+	int num_punct_marks(struct phrase* phrase);
 
 	bool node::node_Add(ifstream& ifst) {
 		info = phrase::phrase_Input(ifst);
@@ -15,7 +17,7 @@ namespace type_phrases {
 	bool node::node_Output(ofstream& ofst) {
 		info->Output(ofst);
 		info->phrase_Output(ofst);
-		ofst << "Number of punctuation marks: " << info->num_punct_marks() << "." << endl;
+		ofst << "Number of punctuation marks: " << num_punct_marks(info) << "." << endl;
 		return true;
 	}
 

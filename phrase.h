@@ -7,14 +7,16 @@ using namespace std;
 namespace type_phrases {
 	// общий класс фраз
 	class phrase {
+	private:
 		string content;
 	public:
+		phrase();
 		virtual ~phrase() {};
 		static phrase* phrase_Input(ifstream& ifst);
 		void phrase_Output(ofstream& ofst);
 		virtual void Input(ifstream& ifst) = 0;
 		virtual void Output(ofstream& ofst) = 0;
-		int num_punct_marks();
+		string getCont();
 	};
 } // end type_phrases namespace
 

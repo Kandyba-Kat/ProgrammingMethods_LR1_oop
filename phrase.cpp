@@ -8,6 +8,10 @@ using namespace std;
 
 namespace type_phrases {
 
+	phrase::phrase() {
+		content = "";
+	}
+
 	phrase* phrase::phrase_Input(ifstream& ifst) {
 		phrase* new_phrase;
 		string k;
@@ -34,16 +38,8 @@ namespace type_phrases {
 		ofst << "Content: " << content << endl;
 	}
 
-	int phrase::num_punct_marks() {
-		string punctM = ".,;:\"!?()-";
-		int cnt = 0;
-		for (int i = 0; i < content.length(); i++) {
-			for (int j = 0; j < punctM.length(); j++) {
-				if (content[i] == punctM[j]) {
-					cnt++;
-				}
-			}
-		}
-		return cnt;
+	string phrase::getCont()
+	{
+		return content;
 	}
 }

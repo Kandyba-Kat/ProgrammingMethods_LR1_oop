@@ -5,6 +5,6 @@ Number of punctuation marks: 11.
 Proverb of country: vvv;
 Content: nnn()!!!
 Number of punctuation marks: 5.
-Author of aphorism: adr;
-Content: rda,,.""
-Number of punctuation marks: 5.
+Proverb of country: adr;
+Content: rda,,.""!!!
+Number of punctuation marks: 8.
