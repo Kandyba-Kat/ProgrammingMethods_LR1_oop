@@ -1,0 +1,10 @@
+Container contains 3 element
+Author of aphorism: abc;
+Content: cba,.,.!!!
+Number of punctuation marks: 7.
+Proverb of country: vvv;
+Content: nnn!!!!!!
+Number of punctuation marks: 6.
+Author of aphorism: adr;
+Content: rda()*!!!
+Number of punctuation marks: 5.
