@@ -13,8 +13,8 @@ namespace type_phrases {
 	}
 
 	bool node::node_Output(ofstream& ofst) {
-		info->Output(ofst);
-		info->phrase_Output(ofst);
+		if (info->OutputAphorism(ofst))
+			info->phrase_Output(ofst);
 		return true;
 	}
 

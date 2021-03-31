@@ -49,7 +49,9 @@ namespace type_phrases {
 		ofst << "Container contains " << size << " element" << endl;
 		cout << "|Container contains " << size << " elements.|" << endl;
 		tmp_node = head;
+		ofst << "Only Aphorism." << endl;
 		for (int i = 0; i < size; i++) {
+			ofst << (i+1) << ": ";
 			tmp_node->node_Output(ofst);
 			tmp_node = node::node_Next(tmp_node, NULL, 2);
 			//tmp_node = tmp_node->next;

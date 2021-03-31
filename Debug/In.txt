@@ -1,0 +1,12 @@
+1
+abc
+cba
+2
+vvv
+nnn
+1
+adr
+rda
+2
+123
+321

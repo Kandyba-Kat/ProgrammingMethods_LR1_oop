@@ -12,6 +12,7 @@ namespace type_phrases {
 		phrase* new_phrase;
 		string k;
 		getline(ifst, k);
+		if (k == "") return 0;
 		switch (atoi(k.c_str()))
 		{
 		case 1:
@@ -31,5 +32,10 @@ namespace type_phrases {
 
 	void phrase::phrase_Output(ofstream& ofst) {
 		ofst << "Content: " << content << "." << endl;
+	}
+	// Вывод данных только для афоризмов
+	bool phrase::OutputAphorism(ofstream& ofst) {
+		ofst << endl;
+		return false;
 	}
 }
