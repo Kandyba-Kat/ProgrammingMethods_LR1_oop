@@ -40,4 +40,17 @@ namespace type_phrases {
 	void phrase::phrase_Output(ofstream& ofst) {
 		ofst << "Content: " << content << ";\n" << "Evaluation: " << eval << "." << endl;
 	}
+
+	int phrase::num_punct_marks() {
+		string punctM = ".,;:\"!?()-";
+		int cnt = 0;
+		for (int i = 0; i < content.length(); i++) {
+			for (int j = 0; j < punctM.length(); j++) {
+				if (content[i] == punctM[j]) {
+					cnt++;
+				}
+			}
+		}
+		return cnt;
+	}
 }
