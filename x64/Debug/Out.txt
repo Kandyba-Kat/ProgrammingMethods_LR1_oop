@@ -1,13 +1,12 @@
-Container contains 3 element
-Author of aphorism: abc;
+Container contains 4 element
+Only Aphorism.
+1: Author of aphorism: aaa;
+Content: aaa.
+Evaluation: 1.
+Number of punctuation marks: 1.
+2: Author of aphorism: abc;
 Content: cba!!!
 Evaluation: 6.
 Number of punctuation marks: 3.
-Answer to riddle: adr;
-Content: rda;::::!
-Evaluation: 8.
-Number of punctuation marks: 6.
-Proverb of country: vvv;
-Content: nnn...,!!!
-Evaluation: 2.
-Number of punctuation marks: 7.
+3: 
+4: 
