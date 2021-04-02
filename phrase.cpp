@@ -58,4 +58,9 @@ namespace type_phrases {
 	{
 		return num_punct_marks() > next->num_punct_marks(); // в порядке неубывания
 	}
+	// Вывод данных только для афоризмов
+	bool phrase::OutputAphorism(ofstream& ofst) {
+		ofst << endl;
+		return false;
+	}
 }

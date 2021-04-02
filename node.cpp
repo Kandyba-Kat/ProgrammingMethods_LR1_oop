@@ -13,9 +13,10 @@ namespace type_phrases {
 	}
 
 	bool node::node_Output(ofstream& ofst) {
-		info->Output(ofst);
-		info->phrase_Output(ofst);
-		ofst << "Number of punctuation marks: " << info->num_punct_marks() << "." << endl;
+		if (info->OutputAphorism(ofst)) {
+			info->phrase_Output(ofst);
+			ofst << "Number of punctuation marks: " << info->num_punct_marks() << "." << endl;
+		}
 		return true;
 	}
 

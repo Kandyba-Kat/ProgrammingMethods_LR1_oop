@@ -17,6 +17,8 @@ namespace type_phrases {
 		virtual void Output(ofstream& ofst) = 0;
 		int num_punct_marks();
 		bool compare(phrase* next);
+		// Вывод только афоризмов
+		virtual bool OutputAphorism(ofstream& ofst);
 	};
 } // end type_phrases namespace
 
