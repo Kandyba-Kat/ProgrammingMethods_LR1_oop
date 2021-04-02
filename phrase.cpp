@@ -31,10 +31,13 @@ namespace type_phrases {
 		}
 		new_phrase->Input(ifst);
 		getline(ifst, new_phrase->content);
+		string ev;
+		getline(ifst, ev);
+		new_phrase->eval = stoi(ev);
 		return new_phrase;
 	}
 
 	void phrase::phrase_Output(ofstream& ofst) {
-		ofst << "Content: " << content << "." << endl;
+		ofst << "Content: " << content << ";\n" << "Evaluation: " << eval << "." << endl;
 	}
 }

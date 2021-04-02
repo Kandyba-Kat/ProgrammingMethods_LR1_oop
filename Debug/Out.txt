@@ -1,7 +1,10 @@
 Container contains 3 element
 Author of aphorism: abc;
-Content: cba.
+Content: cba;
+Evaluation: 6.
 Proverb of country: vvv;
-Content: nnn.
-Answer to riddle: adr;
-Content: rda.
+Content: nnn;
+Evaluation: 7.
+Author of aphorism: adr;
+Content: rda;
+Evaluation: 8.
