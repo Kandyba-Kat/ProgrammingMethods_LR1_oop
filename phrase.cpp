@@ -38,7 +38,7 @@ namespace type_phrases {
 	}
 
 	void phrase::phrase_Output(ofstream& ofst) {
-		ofst << "Content: " << content << ";\n" << "Evaluation: " << eval << "." << endl;
+		ofst << "Content: " << content << "\n" << "Evaluation: " << eval << "." << endl;
 	}
 
 	int phrase::num_punct_marks() {

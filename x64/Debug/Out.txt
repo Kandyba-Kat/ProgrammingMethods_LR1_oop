@@ -1,10 +1,13 @@
 Container contains 3 element
 Author of aphorism: abc;
-Content: cba;
+Content: cba!!!
 Evaluation: 6.
+Number of punctuation marks: 3.
 Proverb of country: vvv;
-Content: nnn;
-Evaluation: 7.
+Content: nnn...,!!!
+Evaluation: 2.
+Number of punctuation marks: 7.
 Answer to riddle: adr;
-Content: rda;
+Content: rda;::::!
 Evaluation: 8.
+Number of punctuation marks: 6.
