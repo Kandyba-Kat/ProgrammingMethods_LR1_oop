@@ -64,7 +64,6 @@ namespace type_phrases {
 		node* returnedNode = head;
 		for (int i = 0; i < index; i++) {
 			returnedNode = node::node_Next(returnedNode, NULL, 2);
-			//returnedNode = returnedNode->node_Next;
 		}
 		return returnedNode;
 	}

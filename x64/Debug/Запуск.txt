@@ -1,2 +1,3 @@
 LR3_2.exe In.txt Out.txt
 LR3_3.exe In.txt Out.txt
+LR3_4.exe In.txt Out.txt

@@ -3,11 +3,11 @@ Author of aphorism: abc;
 Content: cba!!!
 Evaluation: 6.
 Number of punctuation marks: 3.
-Proverb of country: vvv;
-Content: nnn...,!!!
-Evaluation: 2.
-Number of punctuation marks: 7.
 Answer to riddle: adr;
 Content: rda;::::!
 Evaluation: 8.
 Number of punctuation marks: 6.
+Proverb of country: vvv;
+Content: nnn...,!!!
+Evaluation: 2.
+Number of punctuation marks: 7.
