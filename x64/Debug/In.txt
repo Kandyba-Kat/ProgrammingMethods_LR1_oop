@@ -1,0 +1,12 @@
+1
+abc
+cba
+6
+2
+vvv
+nnn
+7
+3
+adr
+rda
+8

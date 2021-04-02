@@ -6,7 +6,7 @@ cba
 vvv
 nnn
 7
-1
+3
 adr
 rda
 8
