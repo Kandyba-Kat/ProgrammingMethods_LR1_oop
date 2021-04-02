@@ -16,6 +16,7 @@ namespace type_phrases {
 		virtual void Input(ifstream& ifst) = 0;
 		virtual void Output(ofstream& ofst) = 0;
 		int num_punct_marks();
+		bool compare(phrase* next);
 	};
 } // end type_phrases namespace
 

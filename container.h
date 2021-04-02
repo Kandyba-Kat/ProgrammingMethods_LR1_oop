@@ -16,6 +16,11 @@ namespace type_phrases {
 		void container_Clear();
 		void container_Fill(ifstream& ifst);
 		void container_Output(ofstream& ofst);
+
+		node* get_Node(int index);
+		void swap(int index_first, int index_second);
+		void sort();
+
 		container();
 		~container();
 	};

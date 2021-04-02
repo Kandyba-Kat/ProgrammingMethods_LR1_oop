@@ -60,6 +60,33 @@ namespace type_phrases {
 		}
 	}
 
+	node* container::get_Node(int index) {
+		node* returnedNode = head;
+		for (int i = 0; i < index; i++) {
+			returnedNode = node::node_Next(returnedNode, NULL, 2);
+			//returnedNode = returnedNode->node_Next;
+		}
+		return returnedNode;
+	}
+
+	void container::swap(int index_first, int index_second) {
+		node* temp = new node;
+		temp->set_Info(get_Node(index_first)->get_Info());
+		get_Node(index_first)->set_Info(get_Node(index_second)->get_Info());
+		get_Node(index_second)->set_Info(temp->get_Info());
+	}
+
+	void container::sort() {
+		for (int i = 0; i < size - 1; i++) {
+			for (int j = i + 1; j < size; j++) {
+				if (get_Node(i)->get_Info()->compare(get_Node(j)->get_Info()))
+				{
+					swap(i, j);
+				}
+			}
+		}
+	}
+
 	container::container() {
 		size = 0;
 		head = NULL;

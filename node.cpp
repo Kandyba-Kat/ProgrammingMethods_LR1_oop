@@ -52,5 +52,13 @@ namespace type_phrases {
 		if (size_list == 0) cur_node->prev = NULL;
 	}
 
+	phrase* node::get_Info() {
+		return info;
+	}
+
+	void node::set_Info(phrase* value) {
+		info = value;
+	}
+
 	node::~node() {}
 }
