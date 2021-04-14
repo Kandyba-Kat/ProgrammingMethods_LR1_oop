@@ -13,6 +13,7 @@ namespace type_phrases {
 	public:
 		bool node_Add(ifstream& ifst);
 		bool node_Output(ofstream& ofst);
+		bool node_OutputAphos(ofstream& ofst);
 		static node* node_Next(node* cur_node, node* value, int flag);
 		static node* node_Prev(node* cur_node, node* value, int flag);
 		void node_Init(node* cur_node, int size_list);

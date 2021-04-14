@@ -40,10 +40,25 @@ namespace type_phrases {
 		ofst << "Container contains " << size << " element" << endl;
 		cout << "|Container contains " << size << " elements.|" << endl;
 		tmp_node = head;
-		ofst << "Only Aphorism." << endl;
 		for (int i = 0; i < size; i++) {
 			ofst << (i+1) << ": ";
 			tmp_node->node_Output(ofst);
+			tmp_node = node::node_Next(tmp_node, NULL, 2);
+		}
+	}
+
+	void container::container_OutputAphos(ofstream& ofst) {
+		if (size == 0) {
+			cout << "|List is empty!|" << endl;
+			return;
+		}
+		ofst << "Container contains " << size << " element" << endl;
+		cout << "|Container contains " << size << " elements.|" << endl;
+		tmp_node = head;
+		ofst << "Only Aphorism." << endl;
+		for (int i = 0; i < size; i++) {
+			ofst << (i + 1) << ": ";
+			tmp_node->node_OutputAphos(ofst);
 			tmp_node = node::node_Next(tmp_node, NULL, 2);
 		}
 	}
