@@ -1,0 +1,5 @@
+Container contains 1 element
+1: Proverb of country: Africa;
+Content: A roaring lion kills nothing
+Evaluation: 6.
+Number of punctuation marks: 0.
