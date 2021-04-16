@@ -6,8 +6,13 @@ using namespace std;
 
 namespace type_phrases {
 
-	void aphorism::Input(ifstream& ifst) {
-		getline(ifst, author);
+	bool aphorism::Input(ifstream& ifst) {
+		if ((author = check_input_string(ifst)) != "0") {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 	void aphorism::Output(ofstream& ofst) {

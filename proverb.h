@@ -9,7 +9,7 @@ namespace type_phrases {
 	class proverb : public phrase {
 		string country;
 	public:
-		void Input(ifstream& ifst);
+		bool Input(ifstream& ifst);
 		void Output(ofstream& ofst);
 		~proverb();
 	};

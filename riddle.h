@@ -9,7 +9,7 @@ namespace type_phrases {
 	class riddle : public phrase {
 		string answer;
 	public:
-		void Input(ifstream& ifst);
+		bool Input(ifstream& ifst);
 		void Output(ofstream& ofst);
 		~riddle();
 	};

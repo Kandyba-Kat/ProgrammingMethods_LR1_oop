@@ -9,7 +9,7 @@ namespace type_phrases {
 	class aphorism : public phrase {
 		string author;
 	public:
-		void Input(ifstream& ifst);
+		bool Input(ifstream& ifst);
 		void Output(ofstream& ofst);
 		// Вывод только афоризмов
 		bool OutputAphorism(ofstream& ofst);

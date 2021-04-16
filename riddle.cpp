@@ -6,8 +6,13 @@ using namespace std;
 
 namespace type_phrases {
 
-	void riddle::Input(ifstream& ifst) {
-		getline(ifst, answer);
+	bool riddle::Input(ifstream& ifst) {
+		if ((answer = check_input_string(ifst)) != "0") {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 	void riddle::Output(ofstream& ofst) {

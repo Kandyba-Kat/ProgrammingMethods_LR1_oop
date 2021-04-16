@@ -15,14 +15,30 @@ namespace type_phrases {
 	bool node::node_Output(ofstream& ofst) {
 		info->Output(ofst);
 		info->phrase_Output(ofst);
-		ofst << "Number of punctuation marks: " << info->num_punct_marks() << "." << endl;
+		unsigned short int check = info->num_punct_marks();
+		if (check == -1) {
+			cout << "|Overflow of number of punctuation marks|" << endl;
+			ofst << "Overflow of number of punctuation marks." << endl;
+			exit(1);
+		}
+		else {
+			ofst << "Number of punctuation marks: " << check << "." << endl;
+		}
 		return true;
 	}
 
 	bool node::node_OutputAphos(ofstream& ofst) {
 		if (info->OutputAphorism(ofst)) {
 			info->phrase_Output(ofst);
-			ofst << "Number of punctuation marks: " << info->num_punct_marks() << "." << endl;
+			int check = info->num_punct_marks();
+			if (check == -1) {
+				cout << "|Overflow of number of punctuation marks|" << endl;
+				ofst << "Overflow of number of punctuation marks." << endl;
+				exit(1);
+			}
+			else {
+				ofst << "Number of punctuation marks: " << check << "." << endl;
+			}
 		}
 		return true;
 	}
