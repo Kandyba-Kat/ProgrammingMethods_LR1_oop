@@ -7,7 +7,7 @@ using namespace std;
 namespace type_phrases {
 
 	bool proverb::Input(ifstream& ifst) {
-		if ((country = check_input_string(ifst)) != "0") {
+		if ((country = Check_In_String(ifst)) != "0") {
 			return true;
 		}
 		else {

@@ -12,7 +12,7 @@ namespace type_phrases {
 		bool Input(ifstream& ifst);
 		void Output(ofstream& ofst);
 		// Вывод только афоризмов
-		bool OutputAphorism(ofstream& ofst);
+		bool Output_Aphorism(ofstream& ofst);
 		~aphorism();
 	};
 } // end type_phrases namespace

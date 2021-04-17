@@ -11,14 +11,14 @@ namespace type_phrases {
 		short eval;
 	public:
 		virtual ~phrase() {};
-		static phrase* phrase_Input(ifstream& ifst);
-		void phrase_Output(ofstream& ofst);
+		static phrase* Phrase_Input(ifstream& ifst);
+		void Phrase_Output(ofstream& ofst);
 		virtual bool Input(ifstream& ifst) = 0;
 		virtual void Output(ofstream& ofst) = 0;
-		unsigned short int num_punct_marks();
-		bool compare(phrase* next);		
-		virtual bool OutputAphorism(ofstream& ofst); // Вывод только афоризмов
-		static string check_input_string(ifstream& ifst);
+		unsigned short int Num_Punct_Marks();
+		bool Compare(phrase* next);		
+		virtual bool Output_Aphorism(ofstream& ofst); // Вывод только афоризмов
+		static string Check_In_String(ifstream& ifst);
 	};
 } // end type_phrases namespace
 

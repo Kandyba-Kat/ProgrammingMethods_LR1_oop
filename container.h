@@ -11,18 +11,20 @@ namespace type_phrases {
 		int size;
 		node* head; // pointer to the first item in the list
 		node* tail;
-		node* tmp_node = new node;
+		node* tmpNode = new node;
 	public:
-		void container_Clear();
-		void container_Fill(ifstream& ifst);
-		void container_Output(ofstream& ofst);
-		void container_OutputAphos(ofstream& ofst);
+		void Cont_Clear();
+		void Cont_Fill(ifstream& ifst);
+		void Cont_Output(ofstream& ofst);
+		void Cont_Output_Aphos(ofstream& ofst);
 
-		node* get_Node(int index);
-		void swap(int index_first, int index_second);
-		void sort();
+		node* Get_Node(int index);
+		void Swap(int index_first, int index_second);
+		void Sort();
 
-		int get_Size() { return size; };
+		int Get_Size() { 
+			return size; 
+		};
 
 		container();
 		~container();

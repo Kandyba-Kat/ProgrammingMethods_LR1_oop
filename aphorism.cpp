@@ -7,7 +7,7 @@ using namespace std;
 namespace type_phrases {
 
 	bool aphorism::Input(ifstream& ifst) {
-		if ((author = check_input_string(ifst)) != "0") {
+		if ((author = Check_In_String(ifst)) != "0") {
 			return true;
 		}
 		else {
@@ -19,7 +19,7 @@ namespace type_phrases {
 		ofst << "Author of aphorism: " << author << ";" << endl;
 	}
 
-	bool aphorism::OutputAphorism(ofstream& ofst) {
+	bool aphorism::Output_Aphorism(ofstream& ofst) {
 		Output(ofst);
 		return true;
 	}

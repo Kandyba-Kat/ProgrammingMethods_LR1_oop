@@ -7,7 +7,7 @@ using namespace std;
 namespace type_phrases {
 
 	bool riddle::Input(ifstream& ifst) {
-		if ((answer = check_input_string(ifst)) != "0") {
+		if ((answer = Check_In_String(ifst)) != "0") {
 			return true;
 		}
 		else {

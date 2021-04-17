@@ -9,8 +9,7 @@ using namespace std;
 
 namespace type_phrases {
 
-	string phrase::check_input_string(ifstream& ifst)
-	{
+	string phrase::Check_In_String(ifstream& ifst) {
 		string temp = "";
 		if (!ifst.eof()) {
 			getline(ifst, temp);
@@ -22,8 +21,8 @@ namespace type_phrases {
 		}
 	}
 
-	phrase* phrase::phrase_Input(ifstream& ifst) {
-		phrase* new_phrase;
+	phrase* phrase::Phrase_Input(ifstream& ifst) {
+		phrase* newPhrase;
 		string k = "";
 		getline(ifst, k);
 		if (k == "") {
@@ -31,41 +30,40 @@ namespace type_phrases {
 			return 0;
 		}
 		else {
-			switch (atoi(k.c_str()))
-			{
+			switch (atoi(k.c_str())) {
 			case 1:
-				new_phrase = new aphorism;
+				newPhrase = new aphorism;
 				break;
 			case 2:
-				new_phrase = new proverb;
+				newPhrase = new proverb;
 				break;
 			case 3:
-				new_phrase = new riddle;
+				newPhrase = new riddle;
 				break;
 			default:
 				cout << "|There are no such type of phrases|" << endl;
 				for (unsigned short i = 0; i < 3; i++) {
-					k = check_input_string(ifst);
+					k = Check_In_String(ifst);
 					if (k == "0") {
 						break;
 					}
 				}
 				return 0;
 			}
-			//new_phrase->Input(ifst);
-			if (!new_phrase->Input(ifst)) {
+
+			if (!newPhrase->Input(ifst)) {
 				return 0;
 			}
-			if ((new_phrase->content = check_input_string(ifst)) == "0") {
+			if ((newPhrase->content = Check_In_String(ifst)) == "0") {
 				return 0;
 			}
 			string ev = "";
-			if ((ev = check_input_string(ifst)) == "0") {
+			if ((ev = Check_In_String(ifst)) == "0") {
 				return 0;
 			}
 			try {
-				new_phrase->eval = stoi(ev);
-				if (new_phrase->eval < 0 || new_phrase->eval > 10) {
+				newPhrase->eval = stoi(ev);
+				if (newPhrase->eval < 0 || newPhrase->eval > 10) {
 					cout << "|Evaluetion value is not in the range 0-10|" << endl;
 					return 0;
 				}
@@ -74,15 +72,15 @@ namespace type_phrases {
 				cout << "|Caught Invalid Argument Exception for evaluetion|" << endl;
 				return 0;
 			}
-			return new_phrase;
+			return newPhrase;
 		}
 	}
 
-	void phrase::phrase_Output(ofstream& ofst) {
+	void phrase::Phrase_Output(ofstream& ofst) {
 		ofst << "Content: " << content << "\n" << "Evaluation: " << eval << "." << endl;
 	}
 
-	unsigned short int phrase::num_punct_marks() {
+	unsigned short int phrase::Num_Punct_Marks() {
 		string punctM = ".,;:\"!?()-";
 		unsigned short int cnt = 0; // от 0 до 65535
 		for (unsigned int i = 0; i < content.length(); i++) {
@@ -98,12 +96,11 @@ namespace type_phrases {
 		return cnt;
 	}
 
-	bool phrase::compare(phrase* next)
-	{
-		return num_punct_marks() > next->num_punct_marks(); // в порядке неубывания
+	bool phrase::Compare(phrase* next) {
+		return Num_Punct_Marks() > next->Num_Punct_Marks(); // в порядке неубывания
 	}
 	// Вывод данных только для афоризмов
-	bool phrase::OutputAphorism(ofstream& ofst) {
+	bool phrase::Output_Aphorism(ofstream& ofst) {
 		ofst << endl;
 		return false;
 	}

@@ -1,2 +1,11 @@
-﻿  container.cpp
+﻿  aphorism.cpp
+  container.cpp
+  main.cpp
+  node.cpp
+  phrase.cpp
+  proverb.cpp
+  riddle.cpp
+  Создание кода...
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\node.cpp(61): warning C4715: type_phrases::node::Node_Next: значение возвращается не при всех путях выполнения
+C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\node.cpp(74): warning C4715: type_phrases::node::Node_Prev: значение возвращается не при всех путях выполнения
   LR1_oop.vcxproj -> C:\Users\Katya\Desktop\Study\Технологии и методы программирования\LR1\ProgrammingMethods_oop\LR1_oop\ProgrammingMethods_LR1_oop\x64\Debug\LR1_oop.exe

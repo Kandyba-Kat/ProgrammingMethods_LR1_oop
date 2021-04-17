@@ -6,16 +6,20 @@ using namespace std;
 
 namespace type_phrases {
 
-	bool node::node_Add(ifstream& ifst) {
-		info = phrase::phrase_Input(ifst);
-		if (info == NULL) return false;
-		else return true;
+	bool node::Node_Add(ifstream& ifst) {
+		info = phrase::Phrase_Input(ifst);
+		if (info == NULL) {
+			return false;
+		}
+		else {
+			return true;
+		}
 	}
 
-	bool node::node_Output(ofstream& ofst) {
+	bool node::Node_Output(ofstream& ofst) {
 		info->Output(ofst);
-		info->phrase_Output(ofst);
-		unsigned short int check = info->num_punct_marks();
+		info->Phrase_Output(ofst);
+		unsigned short int check = info->Num_Punct_Marks();
 		if (check == -1) {
 			cout << "|Overflow of number of punctuation marks|" << endl;
 			ofst << "Overflow of number of punctuation marks." << endl;
@@ -27,10 +31,10 @@ namespace type_phrases {
 		return true;
 	}
 
-	bool node::node_OutputAphos(ofstream& ofst) {
-		if (info->OutputAphorism(ofst)) {
-			info->phrase_Output(ofst);
-			int check = info->num_punct_marks();
+	bool node::Node_Out_Aphos(ofstream& ofst) {
+		if (info->Output_Aphorism(ofst)) {
+			info->Phrase_Output(ofst);
+			int check = info->Num_Punct_Marks();
 			if (check == -1) {
 				cout << "|Overflow of number of punctuation marks|" << endl;
 				ofst << "Overflow of number of punctuation marks." << endl;
@@ -43,9 +47,8 @@ namespace type_phrases {
 		return true;
 	}
 
-	node* node::node_Next(node* cur_node, node* value, int flag) {
-		switch (flag)
-		{
+	node* node::Node_Next(node* cur_node, node* value, int flag) {
+		switch (flag) {
 		case 1: // добавить ссылку на следующий элемент
 			cur_node->next = value;
 			return cur_node;
@@ -57,9 +60,8 @@ namespace type_phrases {
 		}
 	}
 
-	node* node::node_Prev(node* cur_node, node* value, int flag) {
-		switch (flag)
-		{
+	node* node::Node_Prev(node* cur_node, node* value, int flag) {
+		switch (flag) {
 		case 1: // добавить ссылку на предыдущий элемент
 			cur_node->prev = value;
 			return cur_node;
@@ -71,16 +73,18 @@ namespace type_phrases {
 		}
 	}
 
-	void node::node_Init(node* cur_node, int size_list) {
+	void node::Node_Init(node* cur_node, int size_list) {
 		cur_node->next = NULL;
-		if (size_list == 0) cur_node->prev = NULL;
+		if (size_list == 0) {
+			cur_node->prev = NULL;
+		}
 	}
 
-	phrase* node::get_Info() {
+	phrase* node::Get_Info() {
 		return info;
 	}
 
-	void node::set_Info(phrase* value) {
+	void node::Set_Info(phrase* value) {
 		info = value;
 	}
 
