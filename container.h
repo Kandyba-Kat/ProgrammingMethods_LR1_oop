@@ -16,6 +16,7 @@ namespace type_phrases {
 		void container_Clear();
 		void container_Fill(ifstream& ifst);
 		void container_Output(ofstream& ofst);
+		void MultiMethod(ofstream& ofst);
 		container();
 		~container();
 	};

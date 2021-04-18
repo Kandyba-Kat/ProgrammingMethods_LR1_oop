@@ -11,6 +11,11 @@ namespace type_phrases {
 	public:
 		void Input(ifstream& ifst);
 		void Output(ofstream& ofst);
+		// мультиметод
+		void MultiMethod(phrase* other, ofstream& ofst);
+		void MMAphorism(ofstream& ofst);
+		void MMProverb(ofstream& ofst);
+
 		~proverb();
 	};
 } // end type_phrases namespace

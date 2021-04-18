@@ -13,10 +13,6 @@ namespace type_phrases {
 		if (tmp_node->node_Add(ifst)) {
 			head = tmp_node;
 			tail = tmp_node;
-			/*node::node_Next(tmp_node, NULL, 1);
-			tmp_node->next = NULL;
-			node::node_Next(tmp_node, NULL, 2);
-			tmp_node->prev = NULL;*/
 			tmp_node->node_Init(tmp_node, size);
 
 			size++;
@@ -24,14 +20,10 @@ namespace type_phrases {
 			tmp_node = new node;
 		}
 		while (tmp_node->node_Add(ifst)) {			
-			/*node::node_Next(tmp_node, NULL, 1);
-			tmp_node->next = NULL;*/
 			tmp_node->node_Init(tmp_node, size);
 
 			node::node_Prev(tmp_node, tail, 1);
-			//tmp_node->prev = tail;
 			node::node_Next(tail, tmp_node, 1);
-			//tail->next = tmp_node;
 
 			tail = tmp_node;
 			size++;
@@ -52,7 +44,6 @@ namespace type_phrases {
 		for (int i = 0; i < size; i++) {
 			tmp_node->node_Output(ofst);
 			tmp_node = node::node_Next(tmp_node, NULL, 2);
-			//tmp_node = tmp_node->next;
 		}
 	}
 

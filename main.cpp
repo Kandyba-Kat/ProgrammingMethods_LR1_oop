@@ -24,6 +24,12 @@ int main(int argc, char const *argv[])
     c.container_Fill(ifst);
     cout << "Filled container" << endl;
     c.container_Output(ofst);
+    cout << "Output container" << endl;
+
+    ofst << endl;
+    c.MultiMethod(ofst);
+    cout << "Multimethod worked" << endl;
+
     c.container_Clear();
     cout << "Empty container" << endl;
     c.container_Output(ofst);

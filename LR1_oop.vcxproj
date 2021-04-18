@@ -140,11 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="aphorism.cpp" />
+    <ClCompile Include="aphorism_MM.cpp" />
     <ClCompile Include="container.cpp" />
+    <ClCompile Include="container_MM.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="node.cpp" />
     <ClCompile Include="phrase.cpp" />
     <ClCompile Include="proverb.cpp" />
+    <ClCompile Include="proverb_MM.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aphorism.h" />

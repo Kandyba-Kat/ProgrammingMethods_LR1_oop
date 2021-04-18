@@ -7,3 +7,35 @@ Author of aphorism: adr;
 Content: rda.
 Proverb of country: 123;
 Content: 321.
+
+Multimethod.
+Aphorism and Proverb
+Author of aphorism: abc;
+Content: cba.
+Proverb of country: vvv;
+Content: nnn.
+Aphorism and Aphorism
+Author of aphorism: abc;
+Content: cba.
+Author of aphorism: adr;
+Content: rda.
+Aphorism and Proverb
+Author of aphorism: abc;
+Content: cba.
+Proverb of country: 123;
+Content: 321.
+Proverb and Aphorism
+Proverb of country: vvv;
+Content: nnn.
+Author of aphorism: adr;
+Content: rda.
+Proverb and Proverb
+Proverb of country: vvv;
+Content: nnn.
+Proverb of country: 123;
+Content: 321.
+Aphorism and Proverb
+Author of aphorism: adr;
+Content: rda.
+Proverb of country: 123;
+Content: 321.
