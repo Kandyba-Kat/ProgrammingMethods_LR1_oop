@@ -15,15 +15,6 @@ namespace type_phrases {
 	bool node::node_Output(ofstream& ofst) {
 		info->Output(ofst);
 		info->phrase_Output(ofst);
-		ofst << "Number of punctuation marks: " << info->num_punct_marks() << "." << endl;
-		return true;
-	}
-
-	bool node::node_OutputAphos(ofstream& ofst) {
-		if (info->OutputAphorism(ofst)) {
-			info->phrase_Output(ofst);
-			ofst << "Number of punctuation marks: " << info->num_punct_marks() << "." << endl;
-		}
 		return true;
 	}
 
@@ -58,14 +49,6 @@ namespace type_phrases {
 	void node::node_Init(node* cur_node, int size_list) {
 		cur_node->next = NULL;
 		if (size_list == 0) cur_node->prev = NULL;
-	}
-
-	phrase* node::get_Info() {
-		return info;
-	}
-
-	void node::set_Info(phrase* value) {
-		info = value;
 	}
 
 	node::~node() {}

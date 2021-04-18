@@ -8,7 +8,7 @@ using namespace type_phrases;
 int main(int argc, char const *argv[])
 {
     if (argc != 3) {
-        cout << "Incorrect command line!\n" << "Waited: command infile outfile" << endl;
+        cout << "Incorrect command line! " << "Waited: command infile outfile" << endl;
         exit(1);
     }
     cout << argv[1] << endl;
@@ -24,13 +24,6 @@ int main(int argc, char const *argv[])
     c.container_Fill(ifst);
     cout << "Filled container" << endl;
     c.container_Output(ofst);
-    ofst << "\n" << endl;
-    c.sort();
-    cout << "Sorted container" << endl;
-    c.container_Output(ofst);
-    ofst << "\n" << endl;
-    c.container_OutputAphos(ofst);
-    cout << "Output only aphorism" << endl;
     c.container_Clear();
     cout << "Empty container" << endl;
     c.container_Output(ofst);

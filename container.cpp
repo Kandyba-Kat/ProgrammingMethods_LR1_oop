@@ -13,6 +13,10 @@ namespace type_phrases {
 		if (tmp_node->node_Add(ifst)) {
 			head = tmp_node;
 			tail = tmp_node;
+			/*node::node_Next(tmp_node, NULL, 1);
+			tmp_node->next = NULL;
+			node::node_Next(tmp_node, NULL, 2);
+			tmp_node->prev = NULL;*/
 			tmp_node->node_Init(tmp_node, size);
 
 			size++;
@@ -20,9 +24,14 @@ namespace type_phrases {
 			tmp_node = new node;
 		}
 		while (tmp_node->node_Add(ifst)) {			
+			/*node::node_Next(tmp_node, NULL, 1);
+			tmp_node->next = NULL;*/
 			tmp_node->node_Init(tmp_node, size);
+
 			node::node_Prev(tmp_node, tail, 1);
+			//tmp_node->prev = tail;
 			node::node_Next(tail, tmp_node, 1);
+			//tail->next = tmp_node;
 
 			tail = tmp_node;
 			size++;
@@ -41,25 +50,9 @@ namespace type_phrases {
 		cout << "|Container contains " << size << " elements.|" << endl;
 		tmp_node = head;
 		for (int i = 0; i < size; i++) {
-			ofst << (i+1) << ": ";
 			tmp_node->node_Output(ofst);
 			tmp_node = node::node_Next(tmp_node, NULL, 2);
-		}
-	}
-
-	void container::container_OutputAphos(ofstream& ofst) {
-		if (size == 0) {
-			cout << "|List is empty!|" << endl;
-			return;
-		}
-		ofst << "Container contains " << size << " element" << endl;
-		cout << "|Container contains " << size << " elements.|" << endl;
-		tmp_node = head;
-		ofst << "Only Aphorism." << endl;
-		for (int i = 0; i < size; i++) {
-			ofst << (i + 1) << ": ";
-			tmp_node->node_OutputAphos(ofst);
-			tmp_node = node::node_Next(tmp_node, NULL, 2);
+			//tmp_node = tmp_node->next;
 		}
 	}
 
@@ -69,37 +62,12 @@ namespace type_phrases {
 			for (int i = 0; i < size; i++) {
 				tmp_node = tail;
 				tail = node::node_Prev(tail, NULL, 2);
+				//tail = tail->prev;
 				tmp_node->~node();
 			}
 			size = 0;
 			head = NULL;
 			tail = NULL;
-		}
-	}
-
-	node* container::get_Node(int index) {
-		node* returnedNode = head;
-		for (int i = 0; i < index; i++) {
-			returnedNode = node::node_Next(returnedNode, NULL, 2);
-		}
-		return returnedNode;
-	}
-
-	void container::swap(int index_first, int index_second) {
-		node* temp = new node;
-		temp->set_Info(get_Node(index_first)->get_Info());
-		get_Node(index_first)->set_Info(get_Node(index_second)->get_Info());
-		get_Node(index_second)->set_Info(temp->get_Info());
-	}
-
-	void container::sort() {
-		for (int i = 0; i < size - 1; i++) {
-			for (int j = i + 1; j < size; j++) {
-				if (get_Node(i)->get_Info()->compare(get_Node(j)->get_Info()))
-				{
-					swap(i, j);
-				}
-			}
 		}
 	}
 

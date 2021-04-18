@@ -11,8 +11,6 @@ namespace type_phrases {
 	public:
 		void Input(ifstream& ifst);
 		void Output(ofstream& ofst);
-		// Вывод только афоризмов
-		bool OutputAphorism(ofstream& ofst);
 		~aphorism();
 	};
 } // end type_phrases namespace
