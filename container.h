@@ -18,6 +18,8 @@ namespace type_phrases {
 		void Cont_Output(ofstream& ofst);
 		void Cont_Output_Aphos(ofstream& ofst);
 
+		void MultiMethod(ofstream& ofst);
+
 		node* Get_Node(int index);
 		void Swap(int index_first, int index_second);
 		void Sort();

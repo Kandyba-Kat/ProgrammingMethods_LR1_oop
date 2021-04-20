@@ -11,6 +11,12 @@ namespace type_phrases {
 	public:
 		bool Input(ifstream& ifst);
 		void Output(ofstream& ofst);
+		// мультиметод
+		void MultiMethod(phrase* other, ofstream& ofst);
+		void MMAphorism(ofstream& ofst);
+		void MMProverb(ofstream& ofst);
+		void MMRiddle(ofstream& ofst);
+
 		// Вывод только афоризмов
 		bool Output_Aphorism(ofstream& ofst);
 		~aphorism();

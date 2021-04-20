@@ -13,6 +13,36 @@ Evaluation: 5.
 Number of punctuation marks: 0.
 
 
+Multimethod.
+Aphorism and Proverb
+Author of aphorism: abc;
+Content: cba
+Evaluation: 7.
+Number of punctuation marks: 0.
+Proverb of country: vvv;
+Content: nnn
+Evaluation: 6.
+Number of punctuation marks: 0.
+Aphorism and Riddle
+Author of aphorism: abc;
+Content: cba
+Evaluation: 7.
+Number of punctuation marks: 0.
+Answer to riddle: adr;
+Content: rda
+Evaluation: 5.
+Number of punctuation marks: 0.
+Proverb and Riddle
+Proverb of country: vvv;
+Content: nnn
+Evaluation: 6.
+Number of punctuation marks: 0.
+Answer to riddle: adr;
+Content: rda
+Evaluation: 5.
+Number of punctuation marks: 0.
+
+
 Container contains 3 element
 1: Author of aphorism: abc;
 Content: cba

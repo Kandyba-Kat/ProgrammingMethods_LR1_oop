@@ -27,8 +27,14 @@ int main(int argc, char const *argv[]) {
             container c;
             c.Cont_Fill(ifst);
             cout << "Filled container" << endl;
-            c.Cont_Output(ofst);
+            c.Cont_Output(ofst);          
+            cout << "Output container" << endl;
             ofst << "\n" << endl;
+
+            c.MultiMethod(ofst);
+            cout << "Multimethod worked" << endl;
+            ofst << "\n" << endl;
+
             c.Sort();
             cout << "Sorted container" << endl;
             c.Cont_Output(ofst);
